@@ -13,4 +13,4 @@ Suppose we have a master branch and we created one feature branch out of that ma
 
 3: Branches help the developers to manage their work easily and effortlessly. It allows developers to branch out from original code base, work independently and merge when done with the changes.
 
-4: Ideally, project should have a single repository(default is origin) but we can add more based on the project and deployment cycle.
+4: Usually, project should have a single repository(default is origin) but we can add more based on the project and deployment cycle.
