@@ -2,3 +2,16 @@ Q1: What is a gitignore file and what should it include for a Java project?
 Q2: What does fast-forward in git mean?
 Q3: Why should you have different branches?
 Q4: In a project how many remote Git repositories do you usually have?
+
+Answers:
+
+1: A  .gitignore is a text file which tells git to ignore specific type of files. Git does not keep track of files types mentioned in this file. The common type of file mentioned in this are log files, files containing the sensitive data.
+For a java project it should include the file or directories created by different IDE used for the project. Example is .idea folder for the IntelliJ. Apart from this it should include the .class, .jar , .zip, .tar, .log files.
+
+2: In fast forward, git simply moves the source pointer to the destination branch pointer without creating any commit. It can be done only when there is a linear path between both the branches. This method is highly useful and efficient for updating your main branch with the changes from your feature branches. Fast forwarding also help you to keep your commit history clean and readable.
+We can understand it with the below scenario:
+Suppose we have a master branch and we created one feature branch out of that main branch. Till now, both branches are referencing to the same commit. Now make some changes in feature branch and add commit to the feature branch. The master branch is still referencing to the old commit, but feature branch is now referencing to the new commit and is ahead of master branch. Now, it is quite easy to understand how fast forward works. Now the master branch will simply update the reference to the same commit that feature branch is referencing. Also, no changes will be made to repository as feature branch contains all the required change.
+
+3: Branches help the developers to manage their work easily and effortlessly. It allows developers to branch out from original code base, work independently and merge when done with the changes.
+
+4: Usually, a project is having a single repository(default is origin) but we can add more based on the project and deployment cycle.
